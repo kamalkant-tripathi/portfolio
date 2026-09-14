@@ -1267,3 +1267,41 @@ nav {
     margin-top: 40px;
   }
 }
+
+
+/* =========================
+   MOBILE NAVIGATION
+========================= */
+
+@media (max-width: 800px) {
+  nav {
+    padding: 18px 5%;
+    gap: 16px;
+  }
+
+  .nav-logo {
+    flex-shrink: 0;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex: 1;
+    min-width: 0;
+    gap: 18px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
+  }
+
+  .nav-links a {
+    flex-shrink: 0;
+  }
+
+  .resume-button {
+    flex-shrink: 0;
+  }
+}
